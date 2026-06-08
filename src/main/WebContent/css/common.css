@@ -1,0 +1,225 @@
+/*新商品登録・更新・削除に共通するcss　要素ごとの縦表示と行間調整*/
+
+@charset "UTF-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px;
+}
+
+/* 項目ごとのまとまり */
+label {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #c0c0c0;
+  padding: 5px 10px;
+  margin-bottom: 8px; /* ラベルと入力欄の間の隙間 */
+  min-width: 150px;
+}
+
+/* 入力要素の設定） */
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+select,
+textarea {
+  display: block;      /* 強制的に改行させる */
+  margin-bottom: 25px; /* 次の項目までの「行間」をここで設定 */
+  padding: 8px;
+  width: 100%;         /* 横幅を揃える */
+  box-sizing: border-box;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* ラジオボタンは横並びにしたいので設定を上書き */
+input[type="radio"] {
+  display: inline;
+  margin-bottom: 25px;
+}
+
+/* ボタンの調整 */
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/*価格と商品カテゴリ用*/
+.flex-container {
+  display: flex !important; /* 強制的にフレックス適用 */
+  gap: 20px; /* 項目間の隙間 */
+  align-items: flex-start;
+  margin-bottom: 0; /* 下の項目（公開状況）との間隔 */
+  width: 100%;
+}
+
+/* 各項目の幅を調整 */
+.flex-item {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; /* ラベルと入力欄を縦に並べる */
+}
+
+/* 価格入力欄と「円」を横並びにする */
+.price-input-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* 「円」の表示位置微調整 */
+.unit {
+  white-space: nowrap; /* 改行させない */
+  margin-bottom: 25px; /* inputの余白と合わせる */
+  font-weight: bold;
+}
+
+.price-input-group input[type="number"] {
+  flex: 1;
+  margin-bottom: 25px; /* 既存の設定を維持 */
+}
+
+/*ラジオボタン設定用*/
+/* selectの幅調整 */
+.flex-item select {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.flex-item div {
+  margin-bottom: 25px; /* 下の項目との余白を他のinputと合わせる */
+}
+
+/* ラジオボタン自体の余白を微調整して横並びを綺麗にする */
+.flex-item input[type="radio"] {
+  margin-bottom: 0; 
+  margin-right: 5px;
+}
+
+/*バナー関連設定*/
+/* 上部バナーの固定 */
+.top-banner {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000;
+  padding: 10px 0;
+  height: 60px; /* バナーの高さを一律固定 */
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* 左右に分散配置 */
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.banner-content h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* ボタン周りのレイアウト（親グループ） */
+.button-group {
+  display: flex !important;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+/* 管理者ボタンのコンテナ（横並びを絶対維持） */
+.button-group .edit {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px !important;
+  padding: 0 !important;
+  width: auto !important;
+  margin: 0 auto !important;
+}
+
+.top-banner .button-group .edit input {
+  display: inline-block !important; /* 縦並びを解除 */
+  width: auto !important;            /* 幅100%を解除 */
+  margin: 0 !important;             /* 25pxの巨大な下余白を完全にゼロにする */
+  padding: 6px 15px !important;     /* バナーに収まる高さに微調整 */
+  cursor: pointer !important;
+  border: 1px solid #ccc !important;
+  background-color: #fff !important;
+  border-radius: 4px !important;
+  font-size: 0.9rem !important;
+  box-sizing: border-box !important;
+}
+
+.top-banner .button-group .edit input:hover {
+  background-color: #eee !important;
+}
+
+/* 削除ボタンの文字色（優先度を最大化） */
+.top-banner .button-group .edit #ItemDelete {
+  color: red !important;
+  font-weight: bold !important;
+  border-color: #fcc !important;
+}
+
+.top-banner .button-group .edit #ItemDelete:hover {
+  background-color: #fff5f5 !important;
+}
+
+/* キャンセルリンク（ログアウト）をボタン風に装飾 */
+.cancel-btn {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: auto !important; /*右寄せ*/
+}
+
+.cancel-btn:hover {
+  background: #eee;
+}
+
+/* ボタンの装飾 */
+.submit-btn {
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* コンテンツ全体がバナーに隠れないように余白を追加 */
+.container {
+  margin-top: 80px; 
+  padding: 20px;
+}

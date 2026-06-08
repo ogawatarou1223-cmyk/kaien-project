@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*ShowAllData.jspのテーブルデータのうち奇数行に灰色をつける*/
+table td {
+  background: #eee;
+}
+table tr:nth-child(odd) td {
+  background: #fff;
+}
+
+table.surbey_list, table {
+  width: 100% !important;     
+  max-width: 1200px;           
+  margin: 20px auto !important; /* 左右の余白を auto にして中央に配置 */
+  border-collapse: collapse;    /* 枠線の隙間をなくして綺麗に見せる */
+  table-layout: fixed !important;
+}
+
+/* 文字が詰まらないように余白を追加 */
+table th, table td {
+  padding: 10px;
+  text-align: left;            /* 基本は左詰め */
+}
+
+.idData{
+	width: 80px;
+}
+
+.container #mainForm {
+  max-width: 1200px !important; /* common.cssの600px設定を上書き */
+  margin: 0 auto !important;    /* フォーム自体を画面中央に寄せる */
+  width: 100%;
+}
+
+table.surbey_list th, table.surbey_list td {
+  border: 1px solid #ccc; /* border=1の無骨な線を、バナーに合う綺麗なグレーの線にします */
+}
+
+table.surbey_list th.col-edit {
+  width: 80px;  
+  text-align: center;  /* 項目名（ヘッダー）を中央寄せにして見栄えを良くする */
+}
+
+/*商品説明の文字数制限*/
+/* 商品説明のセルに幅を指定し、溢れた文字を「...」にする */
+table.surbey_list td.col-description { 
+  max-width: 250px;                 /* 省略させたい任意の横幅を指定 */
+  overflow-wrap : break-word !important;
+}

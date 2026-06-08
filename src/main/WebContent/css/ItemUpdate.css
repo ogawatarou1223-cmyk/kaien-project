@@ -1,0 +1,36 @@
+/*ItemUpdate.jsp用css 商品IDの表示*/
+
+@charset "UTF-8";
+
+
+/* 商品IDの表示用 */
+.id-display {
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+/*タイトルとボタンの親コンテナ*/
+.top-banner .banner-content {
+  display: flex;
+  justify-content: flex-start; /* 左詰めに並べ、ボタンの余白で位置を調整します */
+  align-items: center;
+}
+
+/* ボタン群（キャンセル・更新する）のコンテナ */
+.top-banner .button-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: auto;
+  margin-left: 55% !important; 
+  margin-right: auto !important;
+}
+
+/* 更新するボタンの個別調整（common.cssの一括input設定をバナー内だけ解除） */
+.top-banner .button-group .submit-btn {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 8px 20px !important; /* キャンセルボタンと高さを揃える */
+}

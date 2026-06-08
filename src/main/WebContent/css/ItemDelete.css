@@ -1,0 +1,67 @@
+/*ItemDelete.jsp用css 商品IDの表示*/
+
+@charset "UTF-8";
+
+/*タイトルとボタンの親コンテナ*/
+.top-banner .banner-content {
+  display: flex;
+  justify-content: flex-start; /* 左詰めに並べ、ボタンの余白で位置を調整します */
+  align-items: center;
+}
+
+/* ボタン群（キャンセル・更新する）のコンテナ */
+.top-banner .button-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: auto;
+  margin-left: 55% !important; 
+  margin-right: auto !important;
+}
+
+/* 更新するボタンの個別調整（common.cssの一括input設定をバナー内だけ解除） */
+.top-banner .button-group .submit-btn {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 8px 20px !important; /* キャンセルボタンと高さを揃える */
+  background-color: white !important;
+  color: red !important;
+  border: 1px solid #ccc !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+}
+
+.container #deleteForm {
+  max-width: 1200px !important; /* common.cssの600px設定を上書き */
+  margin: 0 auto !important;    /* フォーム自体を画面中央に寄せる */
+  width: 100%;
+}
+
+/* 
+  テーブル内の各セル（枠線）を綺麗に見せるための追加補正 
+*/
+table.surbey_list th, table.surbey_list td {
+  border: 1px solid #ccc; /* border=1の無骨な線を、バナーに合う綺麗なグレーの線にします */
+}
+
+table.surbey_list {
+  width: 100% !important;     
+  max-width: 1200px;           
+  margin: 20px auto !important; 
+  border-collapse: collapse;    /* 枠線の隙間をなくして綺麗に見せる */
+}
+
+/* 
+  テーブル内の各セル（枠線や余白）を綺麗に見せるための追加補正 
+*/
+table.surbey_list th, table.surbey_list td {
+  padding: 10px;
+  text-align: left;            /* 基本は左詰め */
+  border: 1px solid #ccc;      /* border=1の無骨な線を綺麗なグレーの線にします */
+}
+
+/* 価格などの数値用の右詰め設定 */
+table.surbey_list .text-right {
+  text-align: right !important;
+}

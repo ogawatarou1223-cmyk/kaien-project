@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/*新規会員登録用css　バナーの調節用*/
+
+/*タイトルとボタンの親コンテナ*/
+.top-banner .banner-content {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+/* ボタン群（キャンセル・登録する）のコンテナ */
+.top-banner .button-group {
+  display: flex !important;
+  gap: 15px !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important;
+}
+
+/* common.css の「margin: 0 auto」を完全に破壊して右寄せにする */
+.top-banner .button-group .edit {
+  display: flex !important;
+  margin: 0 !important;      
+  padding: 0 !important;
+  width: auto !important;
+}
+
+/* 更新するボタンの個別調整（common.cssの一括input設定をバナー内だけ解除） */
+.top-banner .button-group .banner-btn {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 8px 20px !important; /* キャンセルボタンと高さを揃える */
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #ccc !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  border-radius: 4px;
+}
+
+.top-banner .cancel-btn {
+  margin-left: 0 !important; /* common.cssのmargin-left: autoを解除 */
+}
+
+/* パスワードと表示ボタンを並べる枠 */
+.container #regestrationForm .password-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  width: 100% !important;
+}
+
+.container #regestrationForm input#USER_PASS,
+.container #regestrationForm input#USER_PASS[type="text"],
+.container #regestrationForm input#USER_PASS[type="password"] {
+  width: 25% !important;      
+  min-width: 200px !important;       /* 画面が狭くても潰れない最小幅 */
+  max-width: 25% !important;         /* これ以上絶対に拡大させない */
+  box-sizing: border-box !important;
+  padding: 8px !important; 
+  margin: 5px 0 0 0 !important;      /* 下余白25pxを打ち消し */
+  display: inline-block !important;
+}
+
+/* 表示ボタンの高さがcommon.cssに潰されないように固定 */
+#regestrationForm #chkPass {
+  padding: 6px 15px !important;
+  margin-top: 5px !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  width: auto !important;
+}
+
+.container #regestrationForm {
+  max-width: 1200px !important; 
+  margin: 0 auto !important;    
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.container #regestrationForm p {
+  text-align: left !important;
+  margin-bottom: 5px !important;
+}
+
+/* ユーザーID欄の調整*/
+#regestrationForm .id-item input[type="text"] {
+  margin-bottom: 2px !important; /* 入力欄の下の隙間をギリギリまで詰める */
+}
+
+#regestrationForm .id-item p {
+  margin-top: 0 !important;      /* smallを囲うpタグの上の余白を消す */
+  margin-bottom: 15px !important; /* 次の項目（姓・名）との間隔をここで確保 */
+}
+
+
+/*メールアドレス欄の調整 */
+#regestrationForm input[type="email"] {
+  width: 50% !important; 
+  box-sizing: border-box !important; 
+  padding: 8px !important;           
+  margin-bottom: 2px !important; /* 15pxから2pxに縮めて、下のsmallに近づける */
+}
+
+/* メールアドレス欄の真下のsmall用 */
+#regestrationForm input[type="email"] + small,
+#regestrationForm input[type="email"] + br + small {
+  display: inline-block !important; /* marginを効かせるためにブロック化 */
+  margin-bottom: 15px !important;   /* 次の項目（パスワード）との間隔をここで確保 */
+}
+
+/*id打ち込み欄の幅調整*/
+.id-container{
+	width: 75% !important;
+	padding: 8px !important;
+	margin-bottom: 15px !important;
+}
+
+.id-item{
+	width: 100% !important;
+	max-width: 500px !important;
+}
+
+/* 姓と名の横並び調整 */
+.name-flex-container {
+  display: flex !important;
+  gap: 20px !important; 
+  width: auto !important;
+  margin-bottom: 15px !important;
+}
+
+.name-flex-item {
+  flex: none !important;/*50％の枠の中で等分に分け合う*/ 
+  display: block;
+  }
+
+.name-flex-item p {
+  margin: 0 !important;
+}
+
+#regestrationForm .name-flex-item input[type="text"] {
+  width: 280px !important;
+  margin-bottom: 0 !important; /* 個別の下余白を消して横並びを崩さない */
+}
