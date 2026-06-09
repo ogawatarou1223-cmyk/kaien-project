@@ -39,6 +39,7 @@ public class DetailDisplay extends HttpServlet {
 			    String itemId = request.getParameter("itemId");
 
 			    DetailDisplayBL logic = new DetailDisplayBL();
+			    
 			    // 1件分のデータを取得
 			    ShowAllDataDto dto = logic.executeSelectDetail(itemId);
 			    
