@@ -39,6 +39,7 @@ public class ShowAllData extends HttpServlet {
 
 			//「item_info」テーブルのデータを全件抽出
 			List<ShowAllDataDto> list  = new ArrayList<ShowAllDataDto>();
+			
 			ShowAllDataBL logic = new ShowAllDataBL();
 			
 			list = logic.executeSelectSurvey();
