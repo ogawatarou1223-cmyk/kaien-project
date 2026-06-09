@@ -12,6 +12,7 @@ public class DetailDisplayBL {
 
 		//DAOクラスをインスタンス化＆対象のユーザーデータを登録するよう依頼
 		ShowAllDataDao dao = new ShowAllDataDao();
+		
 		ShowAllDataDto dto= dao.selectId(itemId); //一件抽出のメソッド後日用意
 
 		return dto;
