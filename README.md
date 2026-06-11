@@ -1,7 +1,7 @@
 初作成のWebアプリです。  
 
 ## ■ 雑貨Kaien 商品マスタメンテナンス
-
+<img width="1792" height="889" alt="スクリーンショット 2026-06-11 141114" src="https://github.com/user-attachments/assets/e9f55496-e72c-4a41-bdfc-08497554d927" />
 
 ## ■ アプリURL
 http://localhost:8080/kaien_project/Login
