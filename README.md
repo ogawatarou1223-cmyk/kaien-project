@@ -1,4 +1,4 @@
-初作成のWebアプリです。
+初作成のWebアプリです。  
  タイトル：kaien-project 概要：架空の商店の商品管理を目的としたWebアプリケーションになります。 　
  ＃＃＃サンプル画像掲載、後から 
  URL:https://github.com/ogawatarou1223-cmyk/kaien-project/tree/main
