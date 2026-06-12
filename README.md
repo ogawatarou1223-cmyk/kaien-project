@@ -52,8 +52,8 @@ javaの学習をする中で、一つの成果を示すために、就労移行�
 #### ローカルサーバー  
 - tomcat 10_java 17
 
-## ■ ER図
+## ■ 画面遷移図
 <img width="1805" height="441" alt="Image" src="https://github.com/user-attachments/assets/ffc0dfa8-be88-4c17-b2b2-53c372631b71" />
 
-## ■ 画面遷移図
+## ■ ER図
 <img width="1606" height="720" alt="Image" src="https://github.com/user-attachments/assets/cf39746b-29ce-48d3-b323-3d78132bce93" />
