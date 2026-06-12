@@ -52,4 +52,4 @@ http://localhost:8080/kaien_project/Login
 <img width="1805" height="441" alt="Image" src="https://github.com/user-attachments/assets/ffc0dfa8-be88-4c17-b2b2-53c372631b71" />
 
 ## ■ 画面遷移図
-https://docs.google.com/spreadsheets/d/1rm2SeZ9stTu9m4VlIQwo4nLxqb4ZAjdy/edit?gid=955602723#gid=955602723
+<img width="1606" height="720" alt="Image" src="https://github.com/user-attachments/assets/cf39746b-29ce-48d3-b323-3d78132bce93" />
