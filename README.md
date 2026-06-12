@@ -49,7 +49,7 @@ http://localhost:8080/kaien_project/Login
 - tomcat 10_java 17
 
 ## ■ ER図
-https://docs.google.com/spreadsheets/d/14_ggP96dG1G26i6x7G2oq5DNwY4kOlYs/edit?gid=332040094#gid=332040094
+スクリーンショット 2026-06-12 133610.png
 
 ## ■ 画面遷移図
 https://docs.google.com/spreadsheets/d/1rm2SeZ9stTu9m4VlIQwo4nLxqb4ZAjdy/edit?gid=955602723#gid=955602723
