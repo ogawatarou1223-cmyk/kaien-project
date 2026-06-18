@@ -1,6 +1,6 @@
 初作成のWebアプリです。まだまだ至らない点も多いと思いますがよろしくお願いいたします。  
 
-## ■ 雑貨Kaien 商品マスタメンテナンス
+## ■ 雑貨店向け　商品マスタメンテナンス
 <img width="1792" height="889" alt="スクリーンショット 2026-06-11 141114" src="https://github.com/user-attachments/assets/e9f55496-e72c-4a41-bdfc-08497554d927" />  
 <img width="1811" height="927" alt="Image" src="https://github.com/user-attachments/assets/c30ce9ff-f4fc-4ad1-b9e9-3f986652a6ca" />  
 
@@ -56,5 +56,5 @@ javaの学習をする中で、一つの成果を示すために、就労移行�
 ## ■ 画面遷移図
 <img width="1805" height="441" alt="Image" src="https://github.com/user-attachments/assets/ffc0dfa8-be88-4c17-b2b2-53c372631b71" />
 
-## ■ ER図
+## ■ DB設計図
 <img width="1606" height="720" alt="Image" src="https://github.com/user-attachments/assets/cf39746b-29ce-48d3-b323-3d78132bce93" />
