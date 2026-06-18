@@ -2,7 +2,7 @@
 
 ## ■ 雑貨店向け　商品マスタメンテナンス
 <img width="1792" height="889" alt="スクリーンショット 2026-06-11 141114" src="https://github.com/user-attachments/assets/e9f55496-e72c-4a41-bdfc-08497554d927" />  
-<img width="1811" height="927" alt="Image" src="https://github.com/user-attachments/assets/c30ce9ff-f4fc-4ad1-b9e9-3f986652a6ca" />  
+<img width="1827" height="1086" alt="Image" src="https://github.com/user-attachments/assets/0efb1b80-ee00-4320-a876-59f9586a2d23" />
 
 ## ■ アプリURL
 http://localhost:8080/kaien_project/Login
